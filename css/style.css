@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+#main {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding: 40px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.main-div {
+    background-image: url(../img/holiday-hotel-las-vegas-6534.jpg);
+}
+
+#main.holiday {
+    background-image: url(../img/holiday-hotel-las-vegas-6534.jpg);
+}
+
+#main.wedding {
+    background-image: url(../img/beautiful-blooming-bouquet-759668.jpg);
+}
+
+#main.birthday {
+    background-image: url(../img/balloons-birthday-celebrate-1071880.jpg);
+}
+
+#main > h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 30px;
+    width: 100%;
+    border: 1ps solid transparent;
+}
+
+#main > .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+#main > .buttons > .event-button {
+    width: 200px;
+    height: 40px;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    flex-basis: 100%;
+    transition: .4s;
+}
+
+#main > .buttons > .event-button:hover {
+    background-color: rgba(0,0,0,0.7);
+    cursor: pointer;
+}
+
+#main > form {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 60%;
+    padding: 20px 40px;
+    text-align: right;
+    margin-top: 20px;
+}
+
+#main > form > input[type="number"] {
+    width: 180px;
+    height: 40px;
+    margin: 10px;
+}
+
+#main > form > input[type="number"].hour-input {
+    width: 74.5px;
+}
+
+#main > form > input {
+    border: 1px solid transparent;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 25px;
+    font-weight: 500;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+#main > form > input:focus {
+    border: 1px solid transparent;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+#main > form > label {
+    font-weight: 500;
+    color: white;
+    margin-right: 5%;
+}
+
+#main > form > label.colon {
+    margin-right: 0;
+}
+
+#main > form > input[type="button"] {
+    width: 100%;
+    font-weight: 500;
+    text-transform: uppercase;
+    height: 50px;
+    margin: 10px;
+    transition: .4s;
+}
+
+#main > form > input[type="button"]:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+form.clear {
+    visibility: hidden;
+}
+
+p#count {
+    position: absolute;
+}
+
+p.count-add {
+    width: 50%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 30px;
+    font-weight: 500;
+    top: 50%;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+
+
+
