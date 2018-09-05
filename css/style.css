@@ -172,8 +172,6 @@ p.count-add {
 
 #main > h1 > i.fas {
     transition: .5s;
-    width: 100%;
-    height: 100%;
 }
 
 #main > h1 > i.fas:hover {

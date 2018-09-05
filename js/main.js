@@ -58,3 +58,4 @@ document.getElementById("wedding").addEventListener("click", function () {
     document.getElementById("main").removeAttribute("class");
     document.getElementById("main").classList.add("wedding");
 })
+
