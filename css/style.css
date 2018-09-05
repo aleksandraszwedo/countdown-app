@@ -7,7 +7,7 @@
 #main {
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    height: 100vh;
     padding: 40px 10%;
     display: flex;
     flex-direction: column;
@@ -16,19 +16,19 @@
 }
 
 .main-div {
-    background-image: url(../img/holiday-hotel-las-vegas-6534.jpg);
+    background-image: url(../img/holiday-vacation-hotel-luxury.jpg);
 }
 
 #main.holiday {
-    background-image: url(../img/holiday-hotel-las-vegas-6534.jpg);
+    background-image: url(../img/holiday-vacation-hotel-luxury.jpg);
 }
 
 #main.wedding {
-    background-image: url(../img/beautiful-blooming-bouquet-759668.jpg);
+    background-image: url(../img/pexels-photo-256737.jpeg);
 }
 
 #main.birthday {
-    background-image: url(../img/balloons-birthday-celebrate-1071880.jpg);
+    background-image: url(../img/pexels-photo-1071882.jpeg);
 }
 
 #main > h1 {
