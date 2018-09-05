@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     font-family: 'Raleway', sans-serif;
@@ -7,6 +7,7 @@
 #main {
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 100vh;
     padding: 40px 10%;
     display: flex;
@@ -56,20 +57,20 @@
     font-size: 20px;
     text-transform: uppercase;
     border: 1px solid transparent;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     color: white;
     flex-basis: 100%;
     transition: .4s;
 }
 
 #main > .buttons > .event-button:hover {
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     cursor: pointer;
 }
 
 #main > form {
     background-color: rgba(0, 0, 0, 0.5);
-    width: 60%;
+    width: 70%;
     padding: 20px 40px;
     text-align: right;
     margin-top: 20px;
@@ -79,6 +80,14 @@
     width: 180px;
     height: 40px;
     margin: 10px;
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 #main > form > input[type="number"].hour-input {
@@ -95,7 +104,7 @@
 }
 
 #main > form > input:focus {
-    border: 1px solid transparent;
+    outline: none;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
 }
@@ -137,13 +146,66 @@ p.count-add {
     width: 50%;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.5);
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
     top: 50%;
     flex-basis: 100%;
+    text-align: right;
+    padding-right: 10%;
+    line-height: 2;
+}
+
+#main > #count > span {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 5px 10px;
+    width: 70px;
+    display: inline-block;
     text-align: center;
 }
 
+@media all and (max-height: 750px) {
+    #main {
+        height: 100%;
+    }
+}
 
+@media all and (max-width: 768px) {
+    #main > form {
+        width: 100%;
+    }
+    
+    p.count-add {
+        width: 80%;
+    }
+}
 
+@media all and (max-width: 576px) {
+    #main > form > .standard {
+        display: block;
+    }
+}
 
+@media all and (max-width: 355px) {
+    #main > form {
+        padding: 20px 5px;
+    }
+
+    #main > form > input[type="button"] {
+        font-size: 20px;
+        margin: 10px;
+        width: 180px;
+    }
+    
+    p.count-add {
+        font-size: 20px;
+    }
+    
+    #main > #count > span {
+        font-size: 25px;
+        width: 60px;
+    }
+
+}

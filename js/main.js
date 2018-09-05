@@ -17,8 +17,7 @@ document.getElementById("countdown").addEventListener("click", function () {
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        document.getElementById("count").innerHTML = days + " days " + hours + " : " +
-            minutes + " : " + seconds + " left for your event!";
+        document.getElementById("count").innerHTML = "days: <span>" + days + "</span><br> hours: <span>" + hours + "</span><br> minutes: <span>" + minutes + "</span><br> seconds: <span>" + seconds + "</span><br> left for your event!";
     });
     
     document.getElementById("form").classList.add("clear");
